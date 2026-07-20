@@ -32,7 +32,7 @@ Works with any desktop environment:
 ## Installation
 
 ```bash
-git clone https://github.com/konstruktoid/hardening.git
+git clone https://github.com/lukaslimals7/Desktop-Hardening.git
 cd hardening/desktop
 ```
 
