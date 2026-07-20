@@ -1,0 +1,5 @@
+function f_lockroot {
+  echo "[$SCRIPT_COUNT] Lock root account skipped (desktop)"
+
+  ((SCRIPT_COUNT++))
+}

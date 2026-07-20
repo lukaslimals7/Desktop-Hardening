@@ -1,0 +1,5 @@
+function f_usbguard {
+  echo "[$SCRIPT_COUNT] Enable usbguard skipped (desktop)"
+
+  ((SCRIPT_COUNT++))
+}

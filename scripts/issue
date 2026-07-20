@@ -1,0 +1,5 @@
+function f_issue {
+  echo "[$SCRIPT_COUNT] /etc/issue skipped (desktop)"
+
+  ((SCRIPT_COUNT++))
+}

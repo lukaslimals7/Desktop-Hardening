@@ -1,0 +1,5 @@
+function f_suid {
+  echo "[$SCRIPT_COUNT] SUID bit removal skipped (desktop)"
+
+  ((SCRIPT_COUNT++))
+}

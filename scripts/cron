@@ -1,0 +1,16 @@
+function f_cron {
+  echo "[$SCRIPT_COUNT] /etc/cron and /etc/at (desktop)"
+
+  rm /etc/cron.deny 2> /dev/null
+  rm /etc/at.deny 2> /dev/null
+
+  chown root:root /etc/cron*
+  chmod og-rwx /etc/cron*
+
+  chown root:root /etc/at*
+  chmod og-rwx /etc/at*
+
+  sed -i 's/^#cron./cron./' /etc/rsyslog.d/50-default.conf
+
+  ((SCRIPT_COUNT++))
+}

@@ -1,0 +1,13 @@
+function f_disablemod {
+  echo "[$SCRIPT_COUNT] Disable misc kernel modules (desktop)"
+
+  local MOD
+  MOD="algif_aead cpia2 floppy n_hdlc net-pf-31 pcspkr"
+  for disable in $MOD; do
+    if ! grep -q "$disable" "$DISABLEMOD" 2> /dev/null; then
+      echo "install $disable /bin/true" >> "$DISABLEMOD"
+    fi
+  done
+
+  ((SCRIPT_COUNT++))
+}

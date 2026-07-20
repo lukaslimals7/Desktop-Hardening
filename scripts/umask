@@ -1,0 +1,17 @@
+function f_umask {
+  echo "[$SCRIPT_COUNT] umask (desktop)"
+
+  if [ -f /etc/init.d/rc ]; then
+    sed -i 's/umask 022/umask 077/g' /etc/init.d/rc
+  fi
+
+  if ! grep -q -i "umask" "/etc/profile" 2> /dev/null; then
+    echo "umask 077" >> /etc/profile
+  fi
+
+  if ! grep -q -i "umask" "/etc/bash.bashrc" 2> /dev/null; then
+    echo "umask 077" >> /etc/bash.bashrc
+  fi
+
+  ((SCRIPT_COUNT++))
+}

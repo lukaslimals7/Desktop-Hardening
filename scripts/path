@@ -1,0 +1,5 @@
+function f_path {
+  echo "[$SCRIPT_COUNT] Modifying paths skipped (desktop)"
+
+  ((SCRIPT_COUNT++))
+}

@@ -1,0 +1,5 @@
+function f_ctrlaltdel {
+  echo "[$SCRIPT_COUNT] Ctrl-alt-delete skipped (desktop)"
+
+  ((SCRIPT_COUNT++))
+}
