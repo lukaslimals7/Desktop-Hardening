@@ -9,7 +9,7 @@ A comprehensive security hardening suite for Ubuntu, Linux Mint, and Debian-base
 
 - Ubuntu 22.04 / 24.04
 - Linux Mint (all recent versions)
-- Debian 11 / 12
+- Debian 11 / 12 / 13
 - Any Debian-based distribution using `apt` and `systemd`
 
 ## Desktop Environment Support
