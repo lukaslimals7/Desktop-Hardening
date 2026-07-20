@@ -61,7 +61,7 @@ AUTOFILL='Y'
 4. Run the hardening script:
 
 ```bash
-sudo ./ubuntu-desktop.sh
+sudo bash ./ubuntu-desktop.sh
 ```
 
 A log file is created at `desktop-hardening-<hostname>-<date>.log` in the working directory.
