@@ -33,7 +33,7 @@ Works with any desktop environment:
 
 ```bash
 git clone https://github.com/lukaslimals7/Desktop-Hardening.git
-cd hardening/desktop
+cd Desktop-Hardening
 ```
 
 No additional dependencies are required beyond what is already present on a standard Debian-based desktop installation. The script will install any missing prerequisite packages automatically.
